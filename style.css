@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eae7dc; /* Soft beige background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+h1, h2, p {
+    margin: 20px;
+}
+
+h1, h2 {
+    font-size: 2.5em; /* Larger heading size for h1 and h2 */
+}
+
+p {
+    font-size: 1.4em; /* Larger paragraph size */
+}
+
+/* Header Styles */
+header {
+    background-color: #c70039; /* Deep Red for Header */
+    color: white;
+    padding: 50px 0;
+    position: relative;
+}
+
+.header-content {
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    top: 10px; /* Moves the text down slightly from the top */
+    right: 20px; /* Aligns the text to the right */
+    font-size: 3em;
+}
+
+/* Booking Button Styles */
+.booking-section {
+    margin: 50px 0;
+}
+
+.booking-btn {
+    background-color: #ff5733; /* Orange button */
+    color: white;
+    padding: 30px 60px; /* Increased button size */
+    font-size: 1.8em; /* Increased font size */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px 0; /* Spacing between buttons */
+}
+
+.booking-btn:hover {
+    background-color: #e74c3c; /* Slightly darker orange on hover */
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Added shadow for a nicer look */
+    border: 2px solid #ccc; /* Box border */
+}
+
+.intro-section h2, .intro-section p {
+    padding: 20px;
+}
+
+/* Services Section */
+.services-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.service {
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Added shadow for a nicer look */
+    border: 2px solid #ccc; /* Box border */
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #900c3f; /* Dark Red for Footer */
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    /* Adjusts for tablets and smaller screens */
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .booking-btn {
+        padding: 20px 40px;
+        font-size: 1.5em;
+    }
+
+    .intro-section, .service {
+        max-width: 90%; /* Adjust width for smaller screens */
+        margin: 10px auto;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjusts for mobile phones */
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .booking-btn {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+
+    .services-section {
+        flex-direction: column;
+    }
+
+    .intro-section, .service {
+        max-width: 95%; /* Further reduce width for mobile phones */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        right: 10px;
+        top: 5px;
+    }
+}
